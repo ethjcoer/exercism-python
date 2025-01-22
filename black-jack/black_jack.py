@@ -4,6 +4,7 @@ How to play blackjack:    https://bicyclecards.com/how-to-play/blackjack/
 "Standard" playing cards: https://en.wikipedia.org/wiki/Standard_52-card_deck
 """
 
+
 def value_of_card(card):
     """Determine the scoring value of a card.
 
@@ -24,6 +25,7 @@ def value_of_card(card):
         value = int(card)
 
     return value
+
 
 def higher_card(card_one, card_two):
     """Determine which card has a higher value in the hand.
@@ -47,6 +49,7 @@ def higher_card(card_one, card_two):
 
     return higher
 
+
 def value_of_ace(card_one, card_two):
     """Calculate the most advantageous value for the ace card.
 
@@ -69,6 +72,7 @@ def value_of_ace(card_one, card_two):
 
     return upcoming_ace
 
+
 def is_blackjack(card_one, card_two):
     """Determine if the hand is a 'natural' or 'blackjack'.
 
@@ -90,6 +94,7 @@ def is_blackjack(card_one, card_two):
 
     return blackjack
 
+
 def can_split_pairs(card_one, card_two):
     """Determine if a player can split their hand into two hands.
 
@@ -100,6 +105,7 @@ def can_split_pairs(card_one, card_two):
     value_two = value_of_card(card_two)
 
     return value_one == value_two
+
 
 def can_double_down(card_one, card_two):
     """Determine if a blackjack player can place a double down bet.
